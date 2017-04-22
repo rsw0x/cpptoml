@@ -25,3 +25,11 @@ set_target_properties(cpptoml-conversions PROPERTIES
   CXX_STANDARD 11
   CXX_EXTENSIONS OFF
   CXX_STANDARD_REQUIRED YES)
+
+
+add_executable(cpptoml-build-separate separate.cpp separate2.cpp)
+target_link_libraries(cpptoml-build-separate cpptoml)
+set_target_properties(cpptoml-build-separate PROPERTIES
+  CXX_STANDARD 11
+  CXX_EXTENSIONS OFF
+  CXX_STANDARD_REQUIRED YES)
